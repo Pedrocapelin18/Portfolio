@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Portfólio</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #fff;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      background-color: #1f1f1f;
+    }
+
+    header nav ul li {
+      margin: 0 1rem;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .project {
+      background-color: #1f1f1f;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+
+    .social-links img {
+      width: 40px;
+      margin: 0 0.5rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1f1f1f;
+    }
+
+    @media (max-width: 768px) {
+      header nav ul {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .project {
+        padding: 1rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        font-size: 14px;
+      }
+
+      .social-links img {
+        width: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#about">Sobre Mim</a></li>
+        <li><a href="#projects">Projetos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <h1>Pedro Henrique</h1>
+    <p>Meu primeiro portfólio.</p>
+  </section>
+
+  <section id="about">
+    <h2>Sobre Mim</h2>
+    <p>Atualmente estou graduando em Ciência da Computação no Centro Universitário de Rio Preto (UNIRP), no 5° período.</p>
+    <p>Estou em busca de desafios e oportunidades para aprender e crescer como desenvolvedor ou analista de dados.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projetos</h2>
+    <div class="project">
+      <h3>Projeto 1: API simples</h3>
+      <p>Neste projeto, desenvolvi uma API simples utilizando as funções GET, POST, PUT e DELETE.</p>
+      <a href="#" target="_blank">Repositório do GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Projeto 2: Projeto de estrutura de dados</h3>
+      <p>Neste projeto, desenvolvi um projeto de estrutura de dados utilizando a linguagem C.</p>
+      <a href="#" target="_blank">Repositório do GitHub</a>
+    </div>
+    <div class="project">
+      <h3>Projeto 3: Projeto Banco de Dados SQL Server</h3>
+      <p>Neste projeto, desenvolvi tabelas de um banco de dados SQL Server.</p>
+      <a href="#" target="_blank">Repositório do GitHub</a>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contato</h2>
+    <p>Entre em contato comigo pelas redes socias abaixo:</p>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/pedro-capelin-322418242/" target="_blank" aria-label="LinkedIn">
+            <img src="/assets/linkedin.png" alt="LinkedIn">
+        </a>
+        <a href="https://www.instagram.com/pedrocapeliin/" target="_blank" aria-label="Instagram">
+            <img src="/assets/instagram.png" alt="Instagram">
+        </a>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Pedro Capelin. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
